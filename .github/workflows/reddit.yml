@@ -1,0 +1,20 @@
+name: Release
+
+on: push
+name: reddit
+jobs:
+  post:
+    name: Submit
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - name: checkout master
+        uses: actions/checkout@v2
+      - name: Submit
+        uses: ivoryguru/release-for-reddit-action@v1
+        with:
+          username: ${{ secrets.REDDIT_USERNAME }}
+          password: ${{ secrets.REDDIT_PASSWORD }}
+          app-id: ${{ secrets.REDDIT_APP_ID }}
+          app-secret: ${{ secrets.REDDIT_APP_SECRET }}
+          subreddit: test # Submit to /r/test
