@@ -17,4 +17,3 @@ jobs:
           password: ${{ secrets.REDDIT_PASSWORD }}
           app-id: ${{ secrets.REDDIT_APP_ID }}
           app-secret: ${{ secrets.REDDIT_API_SECRET }}
-          subreddit: test # Submit to /r/test
