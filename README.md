@@ -6,7 +6,7 @@ This repository can be used to discuss things related to /r/aeon such as sidebar
 
 ## Posting as /u/aeoncommunity
 
-To make a post as /u/aeoncommunity, create a file with title `post-YYYY-MM-DD-title.md` and add the post contents in the file. 
+To make a post as /u/aeoncommunity, create a file in `posts/` with title `This-is-my-post.md` with spaces replaced by `-` character.
 If the pull request is approved, /u/aeoncommunity will make the post on reddit. 
 
 ## Sidebar updates and other changes
